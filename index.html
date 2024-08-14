@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>List Book</h1>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm...">
+            <button id="addButton">Thêm mới</button>
+        </div>
+        <div id="addForm" class="form hidden">
+            <input type="text" id="nameInput" placeholder="Tên sản phẩm">
+            <input type="text" id="authInput" placeholder="Loại xác thực">
+            <input type="number" id="priceInput" placeholder="Giá">
+            <button id="saveButton">Lưu</button>
+            <button id="cancelButton">Hủy</button>
+        </div>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Tên sách</th>
+                    <th>Tên tác giả
+                    <th>Giá</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="productList"></tbody>
+        </table>
+        <div id="pagination"></div>
+    </div>
+    <script defer src="./app.js"></script>
+</body>
+</html>
